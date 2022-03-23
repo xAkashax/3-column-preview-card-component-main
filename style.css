@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 375px;
+    margin: 0 auto;
+
+}
+
+main.page {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+main.page div {
+    flex-basis: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 30px 40px;
+}
+
+main.page div img,
+main.page div h1,
+main.page div p,
+main.page div a {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+div img {
+    width: 100px;
+}
+
+div.orange {
+    background-color: var(--brightOrange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.cyan {
+    background-color: var(--darkCyan);
+}
+
+div.green {
+    background-color: var(--veryDarkCyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div h1 {
+    color: var(--veryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+div p {
+    color: var(--transparentWhite);
+    line-height: 1.5;
+    margin-right: 18px;
+}
+
+main.page div a {
+    width: 125px;
+    background-color: var(--veryLightGray);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+main.page div.orange a {
+    color: var(--brightOrange);
+}
+
+main.page div.cyan a {
+    color: var(--darkCyan);
+}
+
+main.page div.green a {
+    color: var(--veryDarkCyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    body {  
+        min-width: 1440px;
+        height: 100vh;
+    }
+    
+    main.page {
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        margin: 150px;
+    }
+    
+    main.page div {
+        flex-basis: 33%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px 30px 40px;
+    }
+    
+    main.page div img,
+    main.page div h1,
+    main.page div p,
+    main.page div a {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-right: 45px;
+    }
+    
+    div img {
+        width: 120px;
+    }
+    
+    div.orange {
+        background-color: var(--brightOrange);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    
+    div.cyan {
+        background-color: var(--darkCyan);
+    }
+    
+    div.green {
+        background-color: var(--veryDarkCyan);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    div h1 {
+        color: var(--veryLightGray);
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: 10px;
+    }
+    
+    div p {
+        color: var(--transparentWhite);
+        line-height: 2;
+        margin-right: 60px;
+    }
+    
+    main.page div a {
+        display: block;
+        width: 125px;
+        background-color: var(--veryLightGray);
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 80px;
+        border-radius: 20px;
+        transition: 0.2s linear;
+    }
+    
+    main.page div.orange a {
+        color: var(--brightOrange);
+    }
+    
+    main.page div.cyan a {
+        color: var(--darkCyan);
+    }
+    
+    main.page div.green a {
+        color: var(--veryDarkCyan);
+    }
+
+    main.page div:hover a {
+        border: 1px solid var(--transparentWhite);
+        color: var(--transparentWhite);
+        background-color: transparent; padding: 10px 20px;
+    }
+}
